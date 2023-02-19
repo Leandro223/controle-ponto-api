@@ -30,6 +30,8 @@ public class Empresa implements Serializable {
 	private Date dataAtualizacao;
 	private List<Funcionario> funcionarios;
 	
+	public Empresa() {}
+	
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
