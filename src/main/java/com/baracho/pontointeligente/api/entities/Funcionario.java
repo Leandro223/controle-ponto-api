@@ -19,7 +19,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.Transient;
+import javax.persistence.Transient;
 
 import com.baracho.pontointeligente.api.enums.PerfilEnum;
 

@@ -68,7 +68,7 @@ public class Lancamento implements Serializable {
 		this.descricao = descricao;
 	}
 
-	@Column(name = "localizacao", nullable = true
+	@Column(name = "localizacao", nullable = true)
 	public String getLocalizacao() {
 		return localizacao;
 	}
@@ -95,7 +95,7 @@ public class Lancamento implements Serializable {
 		this.dataAtualizacao = dataAtualizacao;
 	}
 
-	@Enumerated(javax.persistence.EnumType.STRING)
+	@Enumerated(EnumType.STRING)
 	@Column(name = "tipo", nullable = false)
 	public TipoEnum getTipo() {
 		return tipo;
@@ -105,7 +105,7 @@ public class Lancamento implements Serializable {
 		this.tipo = tipo;
 	}
 
-	@ManyToOne(fetch = javax.persistence.FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.EAGER)
 	public Funcionario getFuncionario() {
 		return funcionario;
 	}
